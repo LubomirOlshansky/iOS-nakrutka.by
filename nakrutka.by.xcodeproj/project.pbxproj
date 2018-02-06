@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27CF162B53131982AEDDFE3F /* Pods_nakrutka_by.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08FCF3CDE673C11E95351D8E /* Pods_nakrutka_by.framework */; };
 		8DECC3B3202A4DFF00796784 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DECC3B2202A4DFF00796784 /* AppDelegate.swift */; };
 		8DECC3B5202A4DFF00796784 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DECC3B4202A4DFF00796784 /* ViewController.swift */; };
 		8DECC3B8202A4DFF00796784 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DECC3B6202A4DFF00796784 /* Main.storyboard */; };
 		8DECC3BA202A4DFF00796784 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DECC3B9202A4DFF00796784 /* Assets.xcassets */; };
 		8DECC3BD202A4DFF00796784 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DECC3BB202A4DFF00796784 /* LaunchScreen.storyboard */; };
+		8DECC3C5202A4EB500796784 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DECC3C4202A4EB500796784 /* OrderViewController.swift */; };
+		8DECC3C7202A4F3100796784 /* StatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DECC3C6202A4F3100796784 /* StatusViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		08FCF3CDE673C11E95351D8E /* Pods_nakrutka_by.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nakrutka_by.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		20E4B9753C49D2B5C3DAF752 /* Pods-nakrutka.by.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nakrutka.by.debug.xcconfig"; path = "Pods/Target Support Files/Pods-nakrutka.by/Pods-nakrutka.by.debug.xcconfig"; sourceTree = "<group>"; };
 		8DECC3AF202A4DFF00796784 /* nakrutka.by.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nakrutka.by.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DECC3B2202A4DFF00796784 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8DECC3B4202A4DFF00796784 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,9 @@
 		8DECC3B9202A4DFF00796784 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8DECC3BC202A4DFF00796784 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8DECC3BE202A4DFF00796784 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DECC3C4202A4EB500796784 /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
+		8DECC3C6202A4F3100796784 /* StatusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusViewController.swift; sourceTree = "<group>"; };
+		9AC203B96E371705F0A716A3 /* Pods-nakrutka.by.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nakrutka.by.release.xcconfig"; path = "Pods/Target Support Files/Pods-nakrutka.by/Pods-nakrutka.by.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27CF162B53131982AEDDFE3F /* Pods_nakrutka_by.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		34BD83E709A22C645A90FE0C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				20E4B9753C49D2B5C3DAF752 /* Pods-nakrutka.by.debug.xcconfig */,
+				9AC203B96E371705F0A716A3 /* Pods-nakrutka.by.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8DECC3A6202A4DFF00796784 = {
 			isa = PBXGroup;
 			children = (
 				8DECC3B1202A4DFF00796784 /* nakrutka.by */,
 				8DECC3B0202A4DFF00796784 /* Products */,
+				34BD83E709A22C645A90FE0C /* Pods */,
+				9B7B0848753868F358076959 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,7 +74,10 @@
 		8DECC3B1202A4DFF00796784 /* nakrutka.by */ = {
 			isa = PBXGroup;
 			children = (
+				8DECC3C8202A4F3D00796784 /* OrderVC */,
+				8DECC3C9202A4F5E00796784 /* StatusVC */,
 				8DECC3B2202A4DFF00796784 /* AppDelegate.swift */,
+				8DECC3CA202A4F8700796784 /* Services */,
 				8DECC3B4202A4DFF00796784 /* ViewController.swift */,
 				8DECC3B6202A4DFF00796784 /* Main.storyboard */,
 				8DECC3B9202A4DFF00796784 /* Assets.xcassets */,
@@ -64,6 +87,37 @@
 			path = nakrutka.by;
 			sourceTree = "<group>";
 		};
+		8DECC3C8202A4F3D00796784 /* OrderVC */ = {
+			isa = PBXGroup;
+			children = (
+				8DECC3C4202A4EB500796784 /* OrderViewController.swift */,
+			);
+			path = OrderVC;
+			sourceTree = "<group>";
+		};
+		8DECC3C9202A4F5E00796784 /* StatusVC */ = {
+			isa = PBXGroup;
+			children = (
+				8DECC3C6202A4F3100796784 /* StatusViewController.swift */,
+			);
+			path = StatusVC;
+			sourceTree = "<group>";
+		};
+		8DECC3CA202A4F8700796784 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		9B7B0848753868F358076959 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				08FCF3CDE673C11E95351D8E /* Pods_nakrutka_by.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +125,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8DECC3C1202A4DFF00796784 /* Build configuration list for PBXNativeTarget "nakrutka.by" */;
 			buildPhases = (
+				832AE040263DC8D42918C13A /* [CP] Check Pods Manifest.lock */,
 				8DECC3AB202A4DFF00796784 /* Sources */,
 				8DECC3AC202A4DFF00796784 /* Frameworks */,
 				8DECC3AD202A4DFF00796784 /* Resources */,
+				C339BCB2A2946EB607DC8622 /* [CP] Embed Pods Frameworks */,
+				A2460F83FD9CAE2F9DA6F2B8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,13 +188,71 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		832AE040263DC8D42918C13A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-nakrutka.by-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A2460F83FD9CAE2F9DA6F2B8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-nakrutka.by/Pods-nakrutka.by-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C339BCB2A2946EB607DC8622 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-nakrutka.by/Pods-nakrutka.by-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-nakrutka.by/Pods-nakrutka.by-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8DECC3AB202A4DFF00796784 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DECC3C7202A4F3100796784 /* StatusViewController.swift in Sources */,
 				8DECC3B5202A4DFF00796784 /* ViewController.swift in Sources */,
 				8DECC3B3202A4DFF00796784 /* AppDelegate.swift in Sources */,
+				8DECC3C5202A4EB500796784 /* OrderViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,9 +387,11 @@
 		};
 		8DECC3C2202A4DFF00796784 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20E4B9753C49D2B5C3DAF752 /* Pods-nakrutka.by.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S6PVT5UP7G;
 				INFOPLIST_FILE = nakrutka.by/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "LO.nakrutka-by";
@@ -286,9 +403,11 @@
 		};
 		8DECC3C3202A4DFF00796784 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AC203B96E371705F0A716A3 /* Pods-nakrutka.by.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S6PVT5UP7G;
 				INFOPLIST_FILE = nakrutka.by/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "LO.nakrutka-by";
