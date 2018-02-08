@@ -1,6 +1,0 @@
-framework module Pods_nakrutka_by {
-  umbrella header "Pods-nakrutka.by-umbrella.h"
-
-  export *
-  module * { export * }
-}
