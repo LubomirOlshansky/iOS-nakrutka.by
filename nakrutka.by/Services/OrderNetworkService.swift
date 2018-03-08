@@ -8,7 +8,6 @@
 
 import Foundation
 import Alamofire
-import SwiftyJSON
 
 struct ErrorResponce: Decodable {
     let error: String
@@ -44,10 +43,13 @@ class OrderService: UIViewController {
             DispatchQueue.main.async {
                 completion(orderDecoded.order)
                 return
-            }
-              } catch let jsonErr {
+                }
+                    } catch let jsonErr {
+                print(data)
                 print("Error serializing json:", jsonErr)
                 }
+                
+                
                 
                 
 //                do {
